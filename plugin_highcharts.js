@@ -443,7 +443,8 @@
 					var x = (new Date()).getTime();
 					// console.log('addPoint:', x,currentSettings[seriesno], Number(newValue));
 					var plotMqtt = [x, Number(newValue)]; //create the array+ "Y"
-					//series.addPoint(plotMqtt, true, shift);
+					series.addPoint(plotMqtt, true, shift);
+					series.addPoint(plotMqtt, true, shift);
 				};
 			}
 		}
